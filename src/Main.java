@@ -2,10 +2,9 @@ public class Main {
     public static void main(String[] args) {
 
         int start = 15;
-        int refill = 1340;
-        boolean onRefill = true;
+        int refill = 340;
+        int bonus = 1;
 
-        int bonus = onRefill ? 1 : 0;
         if (refill < 1000) {
             bonus = 0;
         }
