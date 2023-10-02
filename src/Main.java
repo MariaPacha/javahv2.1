@@ -5,16 +5,16 @@ public class Main {
         int refill = 1340;
         boolean onRefill = true;
 
-        int Bonus = onRefill ? 1 : 0;
+        int bonus = onRefill ? 1 : 0;
         if (refill < 1000) {
-            Bonus = 0;
+            bonus = 0;
         }
 
-        int account = start + refill + refill / 100 * Bonus;
-        int bonus = account - start - refill;
+        int account = start + refill + refill / 100 * bonus;
+        int  sumBonus = account - start - refill;
 
         System.out.println("Итоговый счет:" +account);
-        System.out.println("Количество бонусов:" +bonus);
+        System.out.println("Количество бонусов:" +sumBonus);
 
         // Объявляете переменные для входных данных и
         // параметров программы: начального счёта,
