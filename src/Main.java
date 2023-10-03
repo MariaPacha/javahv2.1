@@ -2,10 +2,12 @@ public class Main {
     public static void main(String[] args) {
 
         int start = 15;
-        int refill = 340;
+        int refill = 1340;
         int bonus = 1;
 
-        if (refill < 1000) bonus = 0;
+        if (refill < 1000) {
+            bonus = 0;
+        }
 
         int account = start + refill + refill / 100 * bonus;
         int sumBonus = account - start - refill;
