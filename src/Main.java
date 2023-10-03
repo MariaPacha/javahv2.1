@@ -9,8 +9,8 @@ public class Main {
             bonus = 0;
         }
 
-        int account = start + refill + refill / 100 * bonus;
-        int sumBonus = account - start - refill;
+        int sumBonus = refill / 100 * bonus;
+        int account = start + refill + sumBonus;
 
         System.out.println("Итоговый счет:" + account);
         System.out.println("Количество бонусов:" + sumBonus);
